@@ -1,19 +1,9 @@
-uuid: 4eebffac-57ed-463d-a0b3-099c501292e7
-langcode: en-gb
-status: true
-dependencies: {  }
-_core:
-  default_config_hash: Ja4lnhX6hYLIiJ70cuRZJ-WP0JS6Vc5BKoDnqnb7AG8
-id: d7_article_node
-class: null
-field_plugin_method: null
-cck_plugin_method: null
-migration_tags: null
+id: d7_node_session
+label: 'Drupal 7 session Nodes'
 migration_group: testgroup
-label: 'Drupal 7 Article Nodes'
 source:
   plugin: d7_node
-  node_type: article
+  node_type: session
 process:
   nid:
     -
@@ -68,31 +58,37 @@ process:
     -
       plugin: get
       source: timestamp
-  comment_node_article/0/status:
+  comment_node_speaker/0/status:
     -
       plugin: get
       source: comment
-  body:
+  field_description:
     -
       plugin: get
-      source: body
-  field_tags:
+      source: field_description
+  field_speakers:
+    -
+      plugin: get
+      source: field_speakers
+  field_topics:
     -
       plugin: sub_process
-      source: field_tags
+      source: field_topics
       process:
         target_id: tid
-  field_image:
+  field_video_recording:
+    -
+      plugin: get
+      source: field_video_recording
+  field_slides:
     -
       plugin: sub_process
-      source: field_image
+      source: field_slides
       process:
         target_id: fid
-        alt: alt
-        title: title
-        width: width
-        height: height
+        display: display
+        description: description
 destination:
   plugin: 'entity:node'
-  default_bundle: article
-migration_dependencies: null
+  default_bundle: session
+
