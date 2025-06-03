@@ -106,7 +106,7 @@ Thumbs.db
 /web/web.config
 
 # Ignore vendor dependencies and scripts
-vendor/
+vendor
 /composer.phar
 /composer
 /robo.phar
@@ -115,6 +115,7 @@ vendor/
 /drush
 /drupal.phar
 /drupal
+sites/default
 
 .lando.yml
 .gitattributes
