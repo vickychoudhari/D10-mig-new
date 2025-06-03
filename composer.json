@@ -16,6 +16,7 @@
     ],
     "require": {
         "composer/installers": "^2.0",
+        "cweagans/composer-patches": "^1.7",
         "drupal/aggregator": "^2.2",
         "drupal/core-composer-scaffold": "^10.3",
         "drupal/core-project-message": "^10.3",
@@ -48,11 +49,17 @@
             "drupal/core-vendor-hardening": true,
             "phpstan/extension-installer": true,
             "dealerdirect/phpcodesniffer-composer-installer": true,
-            "php-http/discovery": true
+            "php-http/discovery": true,
+            "cweagans/composer-patches": true
         },
         "sort-packages": true
     },
     "extra": {
+        "patches": {
+            "drupal/core": {
+                "field instance migration": "https://www.drupal.org/files/issues/2233883-63.patch"
+            }
+        },
         "drupal-scaffold": {
             "locations": {
                 "web-root": "./"
