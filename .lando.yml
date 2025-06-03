@@ -1,0 +1,11 @@
+name: d10-mig
+recipe: drupal10
+config:
+  webroot: .
+  php: 8.2
+  ports:
+    - "8002:80"
+    - "4431:443"
+services:
+  myservice:
+    type: phpmyadmin
