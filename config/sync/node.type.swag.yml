@@ -1,0 +1,16 @@
+uuid: 83510abb-35f6-4dec-a00c-8eab41e7b12e
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    parent: 'main:'
+name: Swag
+type: swag
+description: null
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: false

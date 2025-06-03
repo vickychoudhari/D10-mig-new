@@ -1,0 +1,54 @@
+uuid: 07b50cdb-41c2-4343-b0a3-18c4dbcf13f3
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.field.node.swag.field_description
+    - field.field.node.swag.field_image
+    - field.field.node.swag.field_price
+    - node.type.swag
+  module:
+    - image
+    - text
+    - user
+id: node.swag.default
+targetEntityType: node
+bundle: swag
+mode: default
+content:
+  field_description:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_image:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_price:
+    type: number_decimal
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

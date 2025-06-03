@@ -1,0 +1,43 @@
+uuid: 1945c3ac-79a7-401f-a5ec-70f08e8ac742
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.field.node.venue.field_additional_information
+    - field.field.node.venue.field_image
+    - image.style.thumbnail
+    - node.type.venue
+  module:
+    - image
+    - text
+    - user
+id: node.venue.default
+targetEntityType: node
+bundle: venue
+mode: default
+content:
+  field_additional_information:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_image:
+    type: image
+    label: above
+    settings:
+      image_link: file
+      image_style: thumbnail
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

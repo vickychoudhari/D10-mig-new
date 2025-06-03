@@ -1,0 +1,13 @@
+uuid: ee52605a-2318-4076-aebc-f0e38a40da29
+langcode: en-gb
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: i0snV8Wj--OkRW12UdachUiYiz3FbeMwHu_pZYfzKLc
+name: 'Basic page'
+type: page
+description: "Use <em>basic pages</em> for your static content, such as an 'About us' page."
+help: null
+new_revision: false
+preview_mode: 1
+display_submitted: false

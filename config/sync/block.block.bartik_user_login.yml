@@ -1,0 +1,20 @@
+uuid: a5f8b4fc-67e6-42bb-ade7-a0905800319a
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - user
+  theme:
+    - olivero
+id: bartik_user_login
+theme: olivero
+region: content
+weight: 0
+provider: null
+plugin: user_login_block
+settings:
+  id: user_login_block
+  label: ''
+  label_display: '0'
+  provider: user
+visibility: {  }

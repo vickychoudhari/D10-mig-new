@@ -1,0 +1,19 @@
+uuid: d05fc079-7efa-45db-891c-0b80fa389069
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - youtube
+id: node.field_video_recording
+field_name: field_video_recording
+entity_type: node
+type: youtube
+settings: {  }
+module: youtube
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

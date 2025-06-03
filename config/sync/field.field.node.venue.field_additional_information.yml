@@ -1,0 +1,22 @@
+uuid: ff17608e-7c57-43da-90ca-e608b530cc53
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_additional_information
+    - node.type.venue
+  module:
+    - text
+id: node.venue.field_additional_information
+field_name: field_additional_information
+entity_type: node
+bundle: venue
+label: 'Additional information'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

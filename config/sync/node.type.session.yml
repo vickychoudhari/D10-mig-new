@@ -1,0 +1,16 @@
+uuid: a2312c4d-53d8-4c79-8633-dfaa989caceb
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    parent: 'main:'
+name: Session
+type: session
+description: null
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: false

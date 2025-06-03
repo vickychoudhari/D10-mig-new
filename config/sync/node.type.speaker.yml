@@ -1,0 +1,16 @@
+uuid: 18487b0c-7a64-4ac2-acbd-3bc40000c2ef
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    parent: 'main:'
+name: Speaker
+type: speaker
+description: null
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: false

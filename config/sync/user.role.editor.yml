@@ -1,0 +1,58 @@
+uuid: c0208236-4a4e-4c2e-93ba-a3100386b71a
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - node.type.article
+    - node.type.event
+    - node.type.page
+    - node.type.session
+    - node.type.speaker
+    - node.type.sponsor
+    - node.type.venue
+  module:
+    - node
+    - path
+id: editor
+label: Editor
+weight: 3
+is_admin: null
+permissions:
+  - 'access content overview'
+  - 'create article content'
+  - 'create event content'
+  - 'create page content'
+  - 'create session content'
+  - 'create speaker content'
+  - 'create sponsor content'
+  - 'create url aliases'
+  - 'create venue content'
+  - 'delete any article content'
+  - 'delete any event content'
+  - 'delete any page content'
+  - 'delete any session content'
+  - 'delete any speaker content'
+  - 'delete any sponsor content'
+  - 'delete any venue content'
+  - 'delete own article content'
+  - 'delete own event content'
+  - 'delete own page content'
+  - 'delete own session content'
+  - 'delete own speaker content'
+  - 'delete own sponsor content'
+  - 'delete own venue content'
+  - 'edit any article content'
+  - 'edit any event content'
+  - 'edit any page content'
+  - 'edit any session content'
+  - 'edit any speaker content'
+  - 'edit any sponsor content'
+  - 'edit any venue content'
+  - 'edit own article content'
+  - 'edit own event content'
+  - 'edit own page content'
+  - 'edit own session content'
+  - 'edit own speaker content'
+  - 'edit own sponsor content'
+  - 'edit own venue content'
+  - 'view own unpublished content'

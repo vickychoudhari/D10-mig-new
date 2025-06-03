@@ -17,7 +17,7 @@ sites/*/settings*.php
 sites/*/services.yml
 
 # Drupal configuration sync (only ignore if you are not versioning it)
-config/
+# config/
 config_sync/
 
 # IDE/editor settings

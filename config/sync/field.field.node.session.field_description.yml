@@ -1,0 +1,22 @@
+uuid: d11ab159-f1a8-46b6-8ccf-9bc1edc6bd6e
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_description
+    - node.type.session
+  module:
+    - text
+id: node.session.field_description
+field_name: field_description
+entity_type: node
+bundle: session
+label: Description
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

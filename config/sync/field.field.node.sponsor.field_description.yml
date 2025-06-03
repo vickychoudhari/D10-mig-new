@@ -1,0 +1,22 @@
+uuid: 4c993c49-abf7-4099-9759-0af10b83423a
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_description
+    - node.type.sponsor
+  module:
+    - text
+id: node.sponsor.field_description
+field_name: field_description
+entity_type: node
+bundle: sponsor
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

@@ -1,0 +1,18 @@
+uuid: 5b31d62d-7738-40ce-ade8-0ee1e22ab446
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - filter.format.filtered_html
+  module:
+    - filter
+    - system
+_core:
+  default_config_hash: 6WavjUYXIegP9AAg2zXGx54MWIVoomC3SZhNiqe-Dyk
+id: anonymous
+label: 'anonymous user'
+weight: 0
+is_admin: false
+permissions:
+  - 'access content'
+  - 'use text format filtered_html'

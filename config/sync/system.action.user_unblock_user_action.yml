@@ -1,0 +1,13 @@
+uuid: d03f0fc4-37d8-4221-9bd5-1a9bcaffcceb
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - user
+_core:
+  default_config_hash: SPsUXsR3Rc8d1y3gewzaAKWa1ncea_ywXX3f7LTn7k0
+id: user_unblock_user_action
+label: 'Unblock current user'
+type: user
+plugin: user_unblock_user_action
+configuration: {  }
