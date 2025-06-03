@@ -1,0 +1,21 @@
+uuid: eaec2544-278b-4e6b-ad1a-6db4f5184241
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - node
+id: node_session
+label: 'Content - Session'
+type: 'canonical_entities:node'
+pattern: 'session/[node:title]'
+selection_criteria:
+  -
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: node
+    bundles:
+      session: session
+selection_logic: and
+weight: 0
+relationships: {  }

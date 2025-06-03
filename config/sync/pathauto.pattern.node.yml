@@ -1,0 +1,14 @@
+uuid: 12c969f7-6dd4-4f16-bfde-fba43a108be7
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - node
+id: node
+label: 'Content - default'
+type: 'canonical_entities:node'
+pattern: '[node:title]'
+selection_criteria: {  }
+selection_logic: and
+weight: 0
+relationships: {  }

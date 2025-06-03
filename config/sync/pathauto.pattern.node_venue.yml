@@ -1,0 +1,21 @@
+uuid: 2fa4cbfd-31b7-4f90-acd2-b6a97ed223cc
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - node
+id: node_venue
+label: 'Content - Venue'
+type: 'canonical_entities:node'
+pattern: 'venue/[node:title]'
+selection_criteria:
+  -
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: node
+    bundles:
+      venue: venue
+selection_logic: and
+weight: 0
+relationships: {  }
