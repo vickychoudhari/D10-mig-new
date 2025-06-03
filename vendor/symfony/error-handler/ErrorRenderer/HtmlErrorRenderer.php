@@ -61,7 +61,7 @@ class HtmlErrorRenderer implements ErrorRendererInterface
     {
         $headers = ['Content-Type' => 'text/html; charset='.$this->charset];
         if (\is_bool($this->debug) ? $this->debug : ($this->debug)($exception)) {
-            $headers['X-Debug-Exception'] = rawurlencode($exception->getMessage());
+            $headers['X-Debug-Exception'] = rawurlencode(substr($exception->getMessage(), 0, 2000));
             $headers['X-Debug-Exception-File'] = rawurlencode($exception->getFile()).':'.$exception->getLine();
         }
 
@@ -229,6 +229,10 @@ class HtmlErrorRenderer implements ErrorRendererInterface
 
         if (0 < $line) {
             $text .= ' at line '.$line;
+        }
+
+        if (!file_exists($file)) {
+            return $text;
         }
 
         $link = $this->fileLinkFormat->format($file, $line);
