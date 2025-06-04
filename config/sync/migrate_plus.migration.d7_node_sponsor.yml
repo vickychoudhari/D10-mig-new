@@ -1,9 +1,9 @@
-uuid: 169d24b6-dc27-4996-af8f-ec80d1dc7f64
+uuid: b2f47665-087d-49d2-b584-08b8410aa0c6
 langcode: en-gb
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: LpnYopYDV52Fkxl4IGt46WeHRhzxminGMrbxrGYQPmU
+  default_config_hash: RGvZMYXnB6xal6zNH8--pqnl0_VqPRVOpWfK2tm1YuY
 id: d7_node_sponsor
 class: null
 field_plugin_method: null
@@ -68,10 +68,6 @@ process:
     -
       plugin: get
       source: timestamp
-  comment_node_speaker/0/status:
-    -
-      plugin: get
-      source: comment
   field_logo:
     -
       plugin: sub_process

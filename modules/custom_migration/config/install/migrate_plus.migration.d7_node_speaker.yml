@@ -58,10 +58,6 @@ process:
     -
       plugin: get
       source: timestamp
-  comment_node_speaker/0/status:
-    -
-      plugin: get
-      source: comment
   field_biography:
     -
       plugin: get

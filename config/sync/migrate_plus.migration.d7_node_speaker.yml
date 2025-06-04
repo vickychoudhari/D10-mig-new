@@ -1,9 +1,9 @@
-uuid: 1586da88-1b7d-4e84-b7b8-5e1c43f020e1
+uuid: 7027bc37-033a-4231-bd77-c45a3274703c
 langcode: en-gb
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: 9XnOwFb-6cARxsZBtPJMcdvYbNrDnk5WwFMZnr0UN7w
+  default_config_hash: NsG7YqmoXVBQSJe6vhNVTMZ64Qk90EHVOY0Mu6PtRfU
 id: d7_node_speaker
 class: null
 field_plugin_method: null
@@ -68,10 +68,6 @@ process:
     -
       plugin: get
       source: timestamp
-  comment_node_speaker/0/status:
-    -
-      plugin: get
-      source: comment
   field_biography:
     -
       plugin: get
