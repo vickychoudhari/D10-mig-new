@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '6492332d94a32e83b76da83ffd4835f5b9e2d7d0',
+        'reference' => '2432edcce65e5ce7c243b00f7632ed1c5ba0cb8a',
         'name' => 'drupal/legacy-project',
         'dev' => true,
     ),
@@ -415,6 +415,15 @@
             'reference' => '8.x-1.12',
             'dev_requirement' => false,
         ),
+        'drupal/entityqueue' => array(
+            'pretty_version' => '1.9.0',
+            'version' => '1.9.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../modules/contrib/entityqueue',
+            'aliases' => array(),
+            'reference' => '8.x-1.9',
+            'dev_requirement' => false,
+        ),
         'drupal/field_group' => array(
             'pretty_version' => '4.0.0',
             'version' => '4.0.0.0',
@@ -430,7 +439,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '6492332d94a32e83b76da83ffd4835f5b9e2d7d0',
+            'reference' => '2432edcce65e5ce7c243b00f7632ed1c5ba0cb8a',
             'dev_requirement' => false,
         ),
         'drupal/migrate_plus' => array(
