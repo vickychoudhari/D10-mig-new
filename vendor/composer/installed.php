@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '53435079d30f6c72da613ef3caf788fa93f9b588',
+        'reference' => '6492332d94a32e83b76da83ffd4835f5b9e2d7d0',
         'name' => 'drupal/legacy-project',
         'dev' => true,
     ),
@@ -188,6 +188,15 @@
             'install_path' => __DIR__ . '/../doctrine/lexer',
             'aliases' => array(),
             'reference' => '861c870e8b75f7c8f69c146c7f89cc1c0f1b49b6',
+            'dev_requirement' => false,
+        ),
+        'drupal/admin_toolbar' => array(
+            'pretty_version' => '3.6.0',
+            'version' => '3.6.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../modules/contrib/admin_toolbar',
+            'aliases' => array(),
+            'reference' => '3.6.0',
             'dev_requirement' => false,
         ),
         'drupal/aggregator' => array(
@@ -421,7 +430,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '53435079d30f6c72da613ef3caf788fa93f9b588',
+            'reference' => '6492332d94a32e83b76da83ffd4835f5b9e2d7d0',
             'dev_requirement' => false,
         ),
         'drupal/migrate_plus' => array(

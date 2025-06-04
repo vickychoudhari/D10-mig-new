@@ -1,19 +1,9 @@
-uuid: 728cab22-35c2-47d7-ba07-82e09028f6c5
-langcode: en-gb
-status: true
-dependencies: {  }
-_core:
-  default_config_hash: Ja4lnhX6hYLIiJ70cuRZJ-WP0JS6Vc5BKoDnqnb7AG8
-id: d7_article_node
-class: null
-field_plugin_method: null
-cck_plugin_method: null
-migration_tags: null
+id: d7_node_sponsor
+label: 'Drupal 7 Sponsor Nodes'
 migration_group: testgroup
-label: 'Drupal 7 Article Nodes'
 source:
   plugin: d7_node
-  node_type: article
+  node_type: sponsor
 process:
   nid:
     -
@@ -68,31 +58,24 @@ process:
     -
       plugin: get
       source: timestamp
-  comment_node_article/0/status:
+  comment_node_speaker/0/status:
     -
       plugin: get
       source: comment
-  body:
-    -
-      plugin: get
-      source: body
-  field_tags:
+  field_logo:
     -
       plugin: sub_process
-      source: field_tags
-      process:
-        target_id: tid
-  field_image:
-    -
-      plugin: sub_process
-      source: field_image
+      source: field_logo
       process:
         target_id: fid
         alt: alt
         title: title
         width: width
         height: height
+  field_description:
+    -
+      plugin: get
+      source: field_description
 destination:
   plugin: 'entity:node'
-  default_bundle: article
-migration_dependencies: null
+  default_bundle: sponsor
