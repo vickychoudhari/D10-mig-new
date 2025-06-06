@@ -4,6 +4,8 @@ module:
   admin_toolbar: 0
   aggregator: 0
   announcements_feed: 0
+  article_queue: 0
+  article_queue_worker: 0
   automated_cron: 0
   big_pipe: 0
   block: 0
@@ -15,12 +17,15 @@ module:
   contact: 0
   contextual: 0
   ctools: 0
+  custom_events_and_subscribers: 0
   custom_migration: 0
+  customqueue: 0
   datetime: 0
   dblog: 0
   dynamic_page_cache: 0
   editor: 0
   entity_reference_revisions: 0
+  entityqueue: 0
   field: 0
   field_group: 0
   field_group_migrate: 0
@@ -61,6 +66,7 @@ module:
   text: 0
   token: 0
   toolbar: 0
+  ultimate_cron: 0
   update: 0
   user: 0
   views_migration: 0

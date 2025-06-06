@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - article_queue
+title: 'Article Queue Worker'
+id: article_queue_worker
+module: article_queue
+callback: article_queue_article_cronjob

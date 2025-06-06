@@ -1,0 +1,7 @@
+article_queue.article_setting:
+  path: '/admin/config/system/article-setting'
+  defaults:
+    _title: 'Article setting'
+    _form: 'Drupal\article_queue\Form\ArticleSettingsForm'
+  requirements:
+    _permission: 'administer site configuration'

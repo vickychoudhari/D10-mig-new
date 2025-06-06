@@ -34,6 +34,7 @@
         "drupal/rdf": "^2.1",
         "drupal/s3fs": "^3.7",
         "drupal/social_link_field": "^2.0",
+        "drupal/ultimate_cron": "^2.0@alpha",
         "drupal/views_migration": "^1.2",
         "drupal/youtube": "^2.0",
         "drush/drush": "^13.6"

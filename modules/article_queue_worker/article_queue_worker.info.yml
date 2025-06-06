@@ -1,0 +1,7 @@
+name: 'Article Queue Worker'
+type: module
+description: 'Processes queued article nodes.'
+core_version_requirement: ^9 || ^10
+package: Custom
+dependencies:
+  - entityqueue

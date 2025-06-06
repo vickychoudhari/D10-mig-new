@@ -1,0 +1,5 @@
+name: 'customqueue'
+type: module
+description: 'Example module for Queue Worker with Batch Processing'
+core_version_requirement: ^9 || ^10
+package: Custom

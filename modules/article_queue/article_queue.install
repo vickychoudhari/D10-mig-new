@@ -1,0 +1,22 @@
+<?php
+
+declare(strict_types=1);
+
+/**
+ * @file
+ * Install, update and uninstall functions for the queue worker module.
+ */
+
+/**
+ * Implements hook_install().
+ */
+function article_queue_install(): void {
+  \Drupal::messenger()->addStatus(t('Module queue worker has been installed.'));
+}
+
+/**
+ * Implements hook_uninstall().
+ */
+function article_queue_uninstall(): void {
+  \Drupal::messenger()->addStatus(t('Module queue worker has been uninstalled.'));
+}

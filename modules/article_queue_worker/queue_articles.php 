@@ -1,0 +1,17 @@
+<?php
+
+use Drupal\Core\Queue\QueueFactory;
+use Drupal\node\Entity\Node;
+
+/** @var \Drupal\Core\Queue\QueueFactory $queue_factory */
+$queue = \Drupal::queue('article_node_queue_worker');
+
+// Load latest 10 article nodes.
+$nids = \Drupal::entityQuery('node')
+  ->condition('type', 'article')
+  ->range(0, 10)
+  ->execute();
+
+foreach ($nids as $nid) {
+  $queue->createItem(['nid' => $nid]);
+}

@@ -1,0 +1,20 @@
+id: d7_node_queue
+label: 'Migrate Nodequeues'
+migration_group: testgroup
+source:
+  plugin: d7_nodequeue
+
+process:
+  # Map the queue ID to the new entity_queue ID (bundle).
+  id: name # Assuming 'name' is the machine name of your D7 nodequeue.
+  label: title # The human-readable name of the queue.
+  queue_type:
+    plugin: default_value
+    default_value: simple # Or 'multiple_subqueues' if your nodequeue had subqueues.
+  entity_type:
+    plugin: default_value
+    default_value: node # Or 'taxonomy_term', 'user', etc. if your nodequeue held other entity types.
+  # Other fields like field_entity_reference_bundles might be needed if your D7 nodequeues were restricted to specific content types.
+destination:
+  plugin: 'entity:entity_queue'
+migration_dependencies: {}

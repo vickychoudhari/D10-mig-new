@@ -1,0 +1,20 @@
+uuid: 472d0ecc-9972-4469-9c8d-ceb71495a6e8
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - customqueue
+title: 'Queue: customqueue Queue Worker'
+id: ultimate_cron_queue_customqueue_queue_worker
+weight: 10
+module: customqueue
+callback: 'ultimate_cron.queue_worker:queueCallback'
+scheduler:
+  id: simple
+  configuration:
+    rules:
+      - '* * * * *'
+launcher:
+  id: serial
+logger:
+  id: database

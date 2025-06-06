@@ -1,0 +1,18 @@
+<?php
+
+use Drupal\custom_events_and_subscribers\Event\UserLoginEvent;
+
+/**
+ * Implement Hook_user_login().
+ */
+function custom_events_and_subscribers_user_login($account)
+{
+
+    //initiate our event
+    $event = new UserLoginEvent($account);
+
+    //Get the event dispatcher service and dispatch the event.
+    $eventDispatcher = \Drupal::service('event_dispatcher');
+    $eventDispatcher->dispatch($event, UserLoginEvent::EVENT_NAME);
+
+}

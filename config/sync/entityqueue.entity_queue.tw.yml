@@ -1,0 +1,25 @@
+uuid: 20c572bf-1075-4094-b847-4f6b31b94f4d
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - node
+id: tw
+label: tw
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: 'default:node'
+  handler_settings:
+    target_bundles: null
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+queue_settings:
+  min_size: 0
+  max_size: 0
+  act_as_queue: false
+  reverse: false

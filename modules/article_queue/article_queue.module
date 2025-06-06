@@ -1,0 +1,47 @@
+<?php
+
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\Core\Queue\QueueFactory;
+use Drupal\Core\Queue\QueueInterface;
+
+/**
+ * Implements hook_help().
+ */
+function article_queue_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the article_queue module.
+    case 'help.page.article_queue':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('This module will provide an exapmle for queue worker.') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Cron job for Article publisher.
+ */
+function article_queue_article_cronjob() {
+  $entities_load = \Drupal::config('article_queue.articlesettings');
+  $endpoint = "content/article?_format=json";
+
+  $url = $entities_load->get('site_url') . $endpoint;
+
+  $username = $entities_load->get('username');
+  $password = $entities_load->get('password');
+  $client = \Drupal::httpClient();
+  $request = $client->get($url, [
+    'auth' => [$username, $password]
+  ]);
+  $json_string = (string) $request->getBody();
+  $data = json_decode($json_string);
+  /** @var QueueFactory $queue_factory */
+  $queue_factory = \Drupal::service('queue');
+  /** @var QueueInterface $queue */
+  $queue = $queue_factory->get('article_queue_processor');
+  foreach ($data as $node) {
+    $queue->createItem($node);
+  }
+}

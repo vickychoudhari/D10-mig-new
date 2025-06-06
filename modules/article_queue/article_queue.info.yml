@@ -1,0 +1,5 @@
+name: 'Article queue'
+type: module
+description: 'Article nodes in queue update by cron'
+package: Custom
+core_version_requirement: ^10 || ^11

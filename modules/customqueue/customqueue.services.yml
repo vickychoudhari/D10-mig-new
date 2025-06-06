@@ -1,0 +1,6 @@
+services:
+  customqueue.queue_worker:
+    class: Drupal\customqueue\QueueWorker\MyCustomQueue
+    arguments: ['@entity_type.manager']
+    tags:
+      - { name: queue_worker }

@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '2432edcce65e5ce7c243b00f7632ed1c5ba0cb8a',
+        'reference' => '3fd4d3871d6a56ba9931d6e4ee39ff5830aae89d',
         'name' => 'drupal/legacy-project',
         'dev' => true,
     ),
@@ -439,7 +439,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '2432edcce65e5ce7c243b00f7632ed1c5ba0cb8a',
+            'reference' => '3fd4d3871d6a56ba9931d6e4ee39ff5830aae89d',
             'dev_requirement' => false,
         ),
         'drupal/migrate_plus' => array(
@@ -539,6 +539,15 @@
             'install_path' => __DIR__ . '/../../modules/contrib/token',
             'aliases' => array(),
             'reference' => '8.x-1.15',
+            'dev_requirement' => false,
+        ),
+        'drupal/ultimate_cron' => array(
+            'pretty_version' => '2.0.0-beta1',
+            'version' => '2.0.0.0-beta1',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../modules/contrib/ultimate_cron',
+            'aliases' => array(),
+            'reference' => '8.x-2.0-beta1',
             'dev_requirement' => false,
         ),
         'drupal/views_migration' => array(
